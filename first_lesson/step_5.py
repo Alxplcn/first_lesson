@@ -1,6 +1,5 @@
 import requests
 
-
 url = 'https://wttr.in/Череповец?MmnqT&lang=ru'
 response = requests.get(url)
 try:
