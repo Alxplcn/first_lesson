@@ -11,7 +11,7 @@ def get_weather(location: str) -> str:
     return response.text
 
 
-if __name__ == '__main__':
+def main():
     # Шаг 3
     payload = {'nTqu': '',
                'lang': 'en'}
@@ -41,3 +41,7 @@ if __name__ == '__main__':
         print(response.text)
     except requests.exceptions.HTTPError:
         print('Ошибка на шаге 5')
+
+
+if __name__ == '__main__':
+    main()
