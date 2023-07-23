@@ -1,5 +1,5 @@
 import requests
-
+import os
 
 def get_weather(location: str) -> str:
     """Функция принимает наименование локации, по которой нужно получить погоду, и возвращает
@@ -12,6 +12,7 @@ def get_weather(location: str) -> str:
 
 
 def main():
+    os.system('color')
     # Шаг 3
     payload = {'nTqu': '',
                'lang': 'en'}
@@ -41,6 +42,8 @@ def main():
         print(response.text)
     except requests.exceptions.HTTPError:
         print('Ошибка на шаге 5')
+
+    input("Нажмите любую клавишу для выхода ")
 
 
 if __name__ == '__main__':
