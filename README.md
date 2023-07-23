@@ -8,7 +8,7 @@ $ git clone https://github.com/Alxplcn/first_lesson D:\first_lesson
 $ D:
 $ cd D:\first_lesson
 $ pip install -r requirements.txt
-$ main.py
+$ python main.py
 ```
 В случае успеха в консоль будет выведена текущая погода и прогноз на два дня вперёд в Лондоне, аэропорту Шереметьево и Череповце
 # Зависимости
